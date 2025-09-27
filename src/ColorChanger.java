@@ -26,15 +26,29 @@ public class ColorChanger extends javax.swing.JFrame {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-       
-        jSlider1.setMaximum(250);
+                int value1 = jSlider1.getValue();
+                int value2 = jSlider2.getValue();
+                int value3 = jSlider3.getValue();
+
+
+        jSlider1.setMaximum(255);
         jSlider1.setValue(125);
-        jSlider2.setMaximum(250);
+        jSlider2.setMaximum(255);
         jSlider2.setValue(125);
-        jSlider3.setMaximum(250);
+        jSlider3.setMaximum(255);
         jSlider3.setValue(125);
+         Color newColor = new Color(value1, value2, value3);
+         jPanel1.setBackground(newColor);
+         
     }
-    
+    private void updateColor() {
+    int r = jSlider1.getValue();
+    int g = jSlider2.getValue();
+    int b = jSlider3.getValue();
+
+    Color newColor = new Color(r, g, b);
+    jPanel1.setBackground(newColor);
+}
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -174,12 +188,14 @@ public class ColorChanger extends javax.swing.JFrame {
         // TODO add your handling code here:
         int value1 = jSlider1.getValue();
         jLabel4.setText("" + value1);
+        updateColor();
     }//GEN-LAST:event_jSlider1StateChanged
 
     private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
         // TODO add your handling code here:
         int value2 = jSlider2.getValue();
         jLabel5.setText("" + value2);
+        updateColor();
     }//GEN-LAST:event_jSlider2StateChanged
 
     private void jLabel6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabel6PropertyChange
@@ -190,6 +206,7 @@ public class ColorChanger extends javax.swing.JFrame {
         // TODO add your handling code here:
         int value3 = jSlider3.getValue();
         jLabel6.setText("" + value3);
+        updateColor();
     }//GEN-LAST:event_jSlider3StateChanged
     
 
