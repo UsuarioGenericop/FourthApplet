@@ -202,15 +202,19 @@ public class NewJApplet extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-    jTextField3.setText("" + Math.sqrt(Double.parseDouble(jTextField1.getText()) ));
+        jTextField3.setText("" + Math.sqrt(Double.parseDouble(jTextField1.getText()) ));
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        jTextField3.setText("" + Math.sqrt(Double.parseDouble(jTextField2.getText()) ));
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        jTextField3.setText("");
+        jTextField1.setText("");
+        jTextField2.setText("");
     }//GEN-LAST:event_jButton7ActionPerformed
 
 
