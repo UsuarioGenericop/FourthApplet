@@ -187,18 +187,22 @@ public class NewJApplet extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        jTextField3.setText("" + (Double.parseDouble(jTextField1.getText()) - Double.parseDouble(jTextField2.getText())));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        jTextField3.setText("" + (Double.parseDouble(jTextField1.getText()) * Double.parseDouble(jTextField2.getText())));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        jTextField3.setText("" + (Double.parseDouble(jTextField1.getText()) / Double.parseDouble(jTextField2.getText())));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+    jTextField3.setText("" + Math.sqrt(Double.parseDouble(jTextField1.getText()) ));
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
