@@ -1,9 +1,9 @@
 import java.awt.Color;
 import javax.swing.*;
 
-public class NewJApplet extends javax.swing.JFrame {
+public class ButtonsApplet extends javax.swing.JFrame {
 
-    public NewJApplet() {
+    public ButtonsApplet() {
         initComponents();   
         init();             
     }
@@ -11,7 +11,7 @@ public class NewJApplet extends javax.swing.JFrame {
     // Main method → entry point to run in JDK 25
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new NewJApplet().setVisible(true);
+            new ButtonsApplet().setVisible(true);
         });
     }
         
